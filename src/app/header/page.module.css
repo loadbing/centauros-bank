@@ -1,0 +1,25 @@
+.main {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  margin: 10px 40px;
+  left: 0;
+}
+
+.menu {
+  margin: auto 20%;
+}
+
+.menu a {
+  margin: 10px;
+  color: #444bbc;
+  cursor: pointer;
+}
+
+.menu a:hover {
+  color: #161a66;
+  text-decoration: underline;
+}

@@ -1,8 +1,7 @@
-import Image from 'next/image'
 import styles from './page.module.css'
 
-export default function Button({ label, backgroundColor = '' }) {
+export default function Button({ label, backgroundColor = '', disabled = false, onClick }) {
   return (
-    <button className={`${styles.button} ${styles[backgroundColor]}`}>{label}</button>
+    <button disabled={disabled} className={`${styles.button} ${styles[backgroundColor]}`} onClick={onClick}> {label}</button>
   )
 }
