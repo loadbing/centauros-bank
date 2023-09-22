@@ -65,6 +65,7 @@
   .btnSubmit :hover{
     background-color: #444bbc;
     color: #FFFFFF;
+    cursor: pointer;
   }
   .back {
     display: flex;

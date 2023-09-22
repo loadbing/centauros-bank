@@ -53,7 +53,7 @@ export default function ApplicationStatus(){
             <h4>Diligencia tus datos personales</h4>
           </div>
         </div>
-        <form id='formApplication' className={styles.form} onSubmit={(e) => onSubmit(e)}>
+        <form id='formApplicationStatus' className={styles.form} onSubmit={(e) => onSubmit(e)}>
           <div className={styles.columns}>
             <div className={styles.column}>
               <div>
