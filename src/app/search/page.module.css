@@ -130,3 +130,42 @@
   
   @keyframes rotate {from {transform: rotate(0deg);}
       to {transform: rotate(360deg);}}
+
+/*responsive*/
+
+@media (max-width: 600px) {
+  .columns{
+    margin-top: 5rem;
+    justify-content: center;
+    display: grid;
+    width: 350px;
+    grid-auto-columns: auto;
+    grid-template-rows: 1fr 1fr;
+    overflow: hidden;
+  }
+  
+  .text h1{
+    font-size: 1rem;
+    margin-left: 2rem;
+  }
+  .text h4{
+    font-size: 0.7rem;
+    margin-left: 2rem;
+  }
+  .content{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .title{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .icon{
+    margin-left: 55%;
+    margin-top: 1.5rem;
+  }
+  .btnSubmit{
+    margin-left: 28%;
+  }
+}

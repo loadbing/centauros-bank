@@ -46,7 +46,7 @@ export default function ApplicationStatus(){
       <div className={styles.content}>
         <div className={styles.title}>
           <div className={styles.icon}>
-            <Image src={'/clock.svg'} width={70} height={70} className={styles.icon} alt='credit_card' />
+            <Image src={'/clock.svg'} width={70} height={70} className={styles.icon} alt='clock_svg' />
           </div>
           <div className={styles.text}>
             <h1>Consulta el estado de tu solicitud</h1>
