@@ -9,7 +9,7 @@ export default function sendRequest(data, path, onLoad) {
         data: formData,
         headers: { "Content-Type": "multipart/form-data" },
     }).then(function (response) {
-        onLoad(false, 'Proceso exitoso!')
+        onLoad(false, response?.data?.data ?? 'Proceso exitoso!')
     }).catch(function (response) {
         if (response.response) {
             onLoad(false, 'No se pudo procesar la solicitud')
