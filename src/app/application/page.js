@@ -34,7 +34,8 @@ export default function Application() {
   }
 
   return (
-    <main className={styles.main}>
+    <div className={styles.container}>
+      <main className={styles.main}>
       {loading &&
         <>
           <div className={styles.back} />
@@ -59,6 +60,7 @@ export default function Application() {
           </div>
         </div>
         <form id='formApplication' className={styles.form} onSubmit={(e) => onSubmit(e)}>
+          <div className={styles.container}>
           <div className={styles.columns}>
             <div className={styles.column}>
               <div>
@@ -157,11 +159,13 @@ export default function Application() {
               </div>
             </div>
           </div>
+          </div>
           <div className={styles.btnSubmit}>
             <input type="submit" value="Enviar" disabled={loading} />
           </div>
         </form>
       </div>
     </main >
+    </div>
   )
 }

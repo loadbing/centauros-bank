@@ -10,3 +10,13 @@
   color: #FFFFFF;
   background-color: #444bbc;;
 }
+
+@media(max-width: 768px){
+  .button {
+    z-index: 5;
+    color: #5374f6;
+    border-radius: 20px;
+    margin: -50px 5px;
+    padding: 10px 10px;
+  }
+}

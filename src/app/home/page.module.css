@@ -1,9 +1,9 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .banner {
@@ -11,7 +11,7 @@
   padding: 3rem 0;
 }
 
-.banner h1 {
+.banner h1   {
   color: #444bbc;
   font-family: fontMooli;
 }
@@ -56,4 +56,42 @@
 
 .icon {
   margin: 15px 0;
+}
+
+@media (max-width: 768px){
+  .description{
+    padding: 1em 10rem;
+    overflow: hidden;
+    height: fit-content;
+  }
+  .card{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    padding: 0px 0px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: #444bbc;
+    color: #FFFFFF;
+    text-align: center;
+  } 
+  .product {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: #FFFFFF;
+    top: -60px;
+    right: 10px;
+  }
+  .icon {
+    margin: 5px 0;
+  }
+  .main{
+    height: 100vh;
+    gap: 0;
+  }
+  .banner{
+    margin-top: 2rem;
+  }
 }

@@ -119,3 +119,46 @@
 
 @keyframes rotate {from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}}
+
+    @media (max-width: 768px) {
+      .container{
+        width: 100vw;
+        padding-left: 2rem;
+      }
+      .columns{
+        text-align: center;
+        margin-top: 5rem;
+        display: grid;
+        width: 125px;
+        grid-auto-columns: 1fr;
+        grid-template-rows: 1fr;
+      }
+      
+      .text h1{
+        font-size: 2rem;
+        margin-left: 2rem;
+      }
+      .text h4{
+        font-size: 0.7rem;
+        margin-left: 2rem;
+      }
+      .content{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+      }
+      .title{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .icon{
+        margin-left: 50%;
+        margin-top: 3rem;
+      }
+      .btnSubmit{
+        margin-left: 28%;
+      }
+      .column input{
+        width: 125px;
+      }
+    }
